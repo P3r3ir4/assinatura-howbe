@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>howBE - Gerador de Assinaturas</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="icon" href="https://www.howbe.com.br/_next/static/media/logo.8476a7ee.png" type="image/png">
+</head>
+
+<body>
+  <div class="app">
+    <div class="content">
+      
+      <!-- Cabecalho da Pagina -->
+      <div class="header">
+        <span>
+          <img src="https://www.howbe.com.br/_next/static/media/logo.8476a7ee.png" alt="howBE Logo" class="assinaturaImagem">
+        </span>
+        <p>Gerador de Assinatura de E-mail</p>
+      </div>
+
+      <!-- Formulario de Preenchimento -->
+      <div class="forms">
+        <form onsubmit="return false;">
+          <div class="form-input">
+            <p>Nome:</p>
+            <input type="text" id="nome" class="input-text" placeholder="Seu nome">
+          </div>
+          <div class="form-input">
+            <p>Sobrenome:</p>
+            <input type="text" id="sobrenome" class="input-text" placeholder="Seu sobrenome">
+          </div>
+          <div class="form-input">
+            <p>Celular:</p>
+            <input type="tel" id="celular" class="input-text" placeholder="DDD + Número">
+          </div>
+          <div class="form-input">
+            <p>Cargo:</p>
+            <input type="text" id="cargos" class="input-text" placeholder="Ex: Consultor / Analista">
+          </div>
+        </form>
+      </div>
+
+      <!-- Preview da Assinatura -->
+      <div class="assinatura-wrapper">
+        <div class="assinatura-div" id="assinatura-div">
+          <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; border-collapse: collapse; background-color: #ffffff;">
+            <tr>
+              <!-- Logo na Assinatura -->
+              <td style="padding-right: 20px; vertical-align: middle;">
+                <a href="https://howbe.com.br" target="_blank" style="text-decoration: none;">
+                  <img src="https://www.howbe.com.br/_next/static/media/logo.8476a7ee.png" alt="howBE" width="120" style="width: 120px; height: auto; display: block; border: 0;" />
+                </a>
+              </td>
+              
+              <!-- Divisoria Vertical e Dados -->
+              <td style="border-left: 2px solid #E10613; padding-left: 20px; vertical-align: middle;">
+                <h3 style="margin: 0px; font-size: 16px; color: #182C33; font-weight: bold; white-space: nowrap; font-family: Arial, sans-serif;">
+                  <span id="nome-assinatura">Nome Sobrenome</span>
+                </h3>
+                <p style="margin: 3px 0px 8px 0px; font-size: 13px; color: #E10613; font-weight: bold; white-space: nowrap; font-family: Arial, sans-serif;">
+                  <span id="cargo-assinatura">Seu Cargo Aqui</span>
+                </p>
+                <p style="margin: 0px; font-size: 12px; color: #555555; white-space: nowrap; font-family: Arial, sans-serif;">
+                  <a id="celular-assinatura" href="https://wa.me/5599999999999" style="text-decoration: none; color: #182C33;">
+                    <span>+55 99 99999-9999</span>
+                  </a>
+                </p>
+                <p style="margin: 2px 0px 0px 0px; font-size: 12px; white-space: nowrap; font-family: Arial, sans-serif;">
+                  <a href="https://howbe.com.br" target="_blank" style="text-decoration: none; color: #E10613; font-weight: bold;">
+                    <span>howbe.com.br</span>
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Botao Copiar -->
+      <div class="center-button">
+        <button type="button" id="btn-copiar">
+          <h2>Copiar para a Área de Transferência</h2>
+        </button>
+      </div>
+
+      <!-- Rodape -->
+      <footer>
+        <p style="margin: 0; font-size: 13px; color: #666;">howBE &copy; Gerador Interno de Assinaturas</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
